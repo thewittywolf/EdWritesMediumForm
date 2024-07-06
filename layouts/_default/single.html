@@ -93,12 +93,14 @@
     <a></a>
     {{ end }}
   </div>
-  <div class="comment">
+  <div id="remark42"></div>
+
+  <!-- <div class="comment"> -->
     <!-- disqus -->
-    {{ template "_internal/disqus.html" . }}
+    <!-- {{ template "_internal/disqus.html" . }} -->
     <!-- generic engine -->
-    {{ .Site.Params.commentEngine.code | safeHTML }}
-  </div>
+    <!-- {{ .Site.Params.commentEngine.code | safeHTML }} -->
+  <!-- </div> -->
   {{ end }}
   {{ if .Page.Store.Get "hasMermaid" }}
   <script type="module">
